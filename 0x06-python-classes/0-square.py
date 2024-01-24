@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 class Square:
-    """Represents a square"""
+    """Represents a square
+    """
 
     def __init__(self):
-        """Constructor for Square"""
+        """Constructor for Square
+        """
