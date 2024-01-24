@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""A module that defines a square based on task 0"""
+"""A module that defines a square based on task 0
+"""
+
 class Square:
     """Represents a square"""
-    def __init__(self, side):
-        """Constructor for the Square Class.
-
-        Args:
-            side: Length of the square's side.
+    def __init__(self, size):
+        """Constructor for the Square Class
         """
-        self._side = side
+        self._size = size
