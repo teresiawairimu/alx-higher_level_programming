@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""A module that defines a square based on task 3
-
+"""A module that defines a square based on task 4
 Attributes:
     __size: size of the square
 Todo:
-    property def size(self): to retrieve it
-    property setter def size(self, value): to set it
+    Public instance method: def my_print(self): that prints in stdout the square
+    if size is equal to 0, print an empty line
 """
 class Square:
     """A class that represents a Square."""
@@ -35,5 +34,11 @@ class Square:
         """Calculates the area of the square
         Returns:
                 int: Area of the square
-        """
+        """                         
         return self.__size ** 2
+    def my_print(self):
+        if self.__size == 0:
+            print('')
+        else:
+            for _ in range(self.__size):
+                print("#" * self.__size)
