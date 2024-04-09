@@ -10,42 +10,42 @@ class Rectangle:
         __height: The height of the rectangle
     """
 
-    def __init__(self, height=0, width=0):
+    def __init__(self, width=0, height=0):
         """Constructor of the rectangle instance
 
         Args:
             width: The width of the rectangle
             height: The height of the rectangle
         """
-        self.height = height
         self.width = width
+        self.height = height
 
     @property
-    """The getter method"""
-    def height(self):
-        return self.__height
+    def width(self):
+        """retrieves width of the rectangle"""
+        return self.__width
 
-    @height.setter
-    """The setter method"""
-    def height(self, value):
+    @width.setter
+    def width(self, value):
+        """The setter method"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
         else:
-            self.__height = value
+            self.__width = value
 
     @property
-    """The getter method"""
-    def width(self):
-        return self.__width
+    def height(self):
+        """The getter method"""
+        return self.__height
 
-    @width.setter
-    """The setter method"""
-    def width(self, value):
+    @height.setter
+    def height(self, value):
+        """The setter method"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
         else:
-            self.__width = value
+            self.__height = value
