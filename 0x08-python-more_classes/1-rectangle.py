@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-"""
-A class that defines a rectangle
-"""
+"""A class that defines a rectangle"""
+
 class Rectangle:
     """
-    Initialize a rectangle with default width and height values of 0
-    getter methods for retrieving both width and height
-    setter methods for setting width and height
+
     """
     def __init__(self, width=0, height=0):
         self.__width = width
