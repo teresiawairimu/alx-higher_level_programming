@@ -1,5 +1,6 @@
 #!/usr/bin/path
-"""A class that defines a rectangle"""
+"""A class that defines a rectangle
+"""
 
 
 class Rectangle:
@@ -17,8 +18,8 @@ class Rectangle:
             width: The width of the rectangle
             height: The height of the rectangle
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
