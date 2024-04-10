@@ -1,0 +1,49 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+Importing function
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Add 50 and -1
+	>>> add_integer(50, -1)
+	49
+
+Add 50 and 1
+	>>> add_integer(50, 1)
+	51
+
+Add -1 and 50
+	>>> add_integer(-1, 50)
+	49
+
+Add 1 and 50
+	>>> add_integer(1, 50)
+	51
+
+Add () and 50
+	>>> add_integer("", 50)
+	Traceback (most recent call last):
+	      ...
+        TypeError: a must be an integer
+
+Add 50 and ()
+	>>> add_integer(50,"" )
+	Traceback (most recent call last):
+	      ...
+        TypeError: b must be an integer
+
+Add 50 and "bag"
+	>>> add_integer(50, "bag")
+	Traceback (most recent call last):
+	      ...
+        TypeError: b must be an integer
+
+Add "bag" and 50
+	>>> add_integer("bag", 50)
+	Traceback (most recent call last):
+	      ...
+        TypeError: b must be an integer
+
