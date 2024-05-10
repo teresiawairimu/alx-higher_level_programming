@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
 
     Args:
         my_list(list): A list containing the elements.
-        x(int): the integer that specifies the numbeer of elements to print
+        x(int): the integer that specifies the number of elements to print
 
     Returns:
         The number of elements that are printed
@@ -15,6 +15,6 @@ def safe_print_list(my_list=[], x=0):
             print(my_list[element], end='')
             number += 1
         except IndexError:
-            break 
+            break
     print()
     return number
