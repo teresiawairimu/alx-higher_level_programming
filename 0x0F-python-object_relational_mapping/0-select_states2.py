@@ -2,7 +2,23 @@
 """Lists all states from database hbtn_0e_0_usa"""
 import sys
 from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy import Column, Integer, String
+
+Base = declarative_base()
+
+
+class State(Base):
+    """Class maps a table, "states"
+
+        Attributes:
+            id(int): primary key
+            name(string): name of the state
+    """
+    __tablename__ = 'states'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(256), nullable=False)
 
 
 if __name__ == "__main__":
