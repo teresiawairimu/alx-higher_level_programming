@@ -16,8 +16,8 @@ if __name__ == "__main__":
             database=database_name
             )
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    rows = cursor.fetchall()
+    cursor.query("SELECT * FROM states ORDER BY id ASC")
+    rows = cursor.store_result().fetch_row(maxrows=0)
     for row in rows:
         print(row)
     cursor.close()
