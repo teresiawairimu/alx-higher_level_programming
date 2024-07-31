@@ -13,6 +13,5 @@ request(url, (err, response, body) => {
       console.error('Error writing to the file:', err);
       process.exit(1);
     }
-    console.log('successful');
   });
 });
